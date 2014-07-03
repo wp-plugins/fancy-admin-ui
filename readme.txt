@@ -26,13 +26,8 @@ Wordpress's admin themes are great, but we wanted to take it a step further. Thi
 
 == Changelog ==
 
-= 1.0.2 =
-* Updated version compatible since to 3.9.x
-
-= 1.0.1 =
-* Initial version compatible before 3.9.0
+= 0.1 Beta =
+Initial beta version for release. The responsive portion of the nav isn't yet addressed.
 
 == Upgrade Notice ==
 
-= 0.1 Beta =
-Initial beta version for release. The responsive portion of the nav isn't yet addressed.
