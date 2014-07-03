@@ -2,6 +2,10 @@ html.wp-toolbar {
 padding-top:46px!important
 }
 
+.admin-bar.masthead-fixed .site-header {
+  top: 46px!important;
+}
+
 #wpadminbar {
 background:#3498db;
 height:auto
