@@ -26,6 +26,9 @@ Wordpress's admin themes are great, but we wanted to take it a step further. Thi
 
 == Changelog ==
 
+= 0.1 =
+Cleaning up code
+
 = 0.1 Beta =
 Initial beta version for release. The responsive portion of the nav isn't yet addressed.
 
