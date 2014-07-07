@@ -34,10 +34,12 @@ function fau_swap_footer_admin() {
 add_filter( 'admin_footer_text', 'fau_swap_footer_admin' );
 
 // Remove default HTML height on the admin bar callback
-function fui_admin_bar_style() { ?>
+function fui_admin_bar_style() {
+  if ( is_admin_bar_showing() ) {
+?>
   <style type="text/css" media="screen">
     html { margin-top: 46px !important; }
     * html body { margin-top: 46px !important; }
   </style>
-<?php }
+<?php } }
 add_theme_support( 'admin-bar', array( 'callback' => 'fui_admin_bar_style' ) );
