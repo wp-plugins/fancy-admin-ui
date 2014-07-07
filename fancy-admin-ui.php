@@ -3,7 +3,7 @@
   Plugin Name:  Fancy Admin UI
   Plugin URI:   http://boborchard.com/plugins/fancy-admin-ui/
   Description:  Super clean, blue admin panel theme
-  Version:      0.1
+  Version:      0.2
   Author:       Bob Orchard
   Author URI:   http://boborchard.com
   */

@@ -14,6 +14,8 @@ Clean, blue theme for the Wordpress Admin panel and Admin Bar
 
 Wordpress's admin themes are great, but we wanted to take it a step further. This is a clean blue/gray theme for the admin panel that simplifies the interface and makes things more accessible for our customers.
 
+If there are any features you'd like to see or bugs with other plugins - visit the support tab and let me know.
+
 ##Improvements made
 
 * Blue AdminBar for front and backend of site
@@ -31,6 +33,9 @@ Wordpress's admin themes are great, but we wanted to take it a step further. Thi
 1. Screenshot of the basic admin panel
 
 == Changelog ==
+
+= 0.2 =
+Added updates to style Visual Composer elements
 
 = 0.1 =
 Cleaning up code, reduced sidebar menu item height

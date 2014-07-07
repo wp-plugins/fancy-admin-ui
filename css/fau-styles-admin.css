@@ -174,3 +174,15 @@ display:none
 #acf-col-left {
 margin:0!important
 }
+
+.vc_navbar.subnav-fixed {
+top:40px!important
+}
+
+.composer-switch a,.composer-switch a:visited,.composer-switch a.wpb_switch-to-front-composer,.composer-switch a:visited.wpb_switch-to-front-composer,.composer-switch .logo-icon {
+background-color:#3498db!important
+}
+
+.composer-switch .vc-spacer, .composer-switch a.wpb_switch-to-composer:hover, .composer-switch a:visited.wpb_switch-to-composer:hover, .composer-switch a.wpb_switch-to-front-composer:hover, .composer-switch a:visited.wpb_switch-to-front-composer:hover {
+background-color: #2581bf!important
+}
