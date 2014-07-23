@@ -4,7 +4,7 @@ Donate link: http://boborchard.com/wordpress-plugin-donations/
 Tags: ui, ux, admin theme, blue, custom admin
 Requires at least: 3.9.0
 Tested up to: 3.9.1
-Stable tag: 0.4
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,10 +38,7 @@ Be sure to check your login page because the default WP logo is a light blue and
 
 == Changelog ==
 
-= 0.4 =
-Fixed missing files in /trunk
-
-= 0.3 =
+= 1.0 =
 Added ability to change the primary and secondary color via the WP Admin Settings page
 
 = 0.2 =
