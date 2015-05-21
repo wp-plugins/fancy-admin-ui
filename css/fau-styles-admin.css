@@ -1,13 +1,46 @@
+<?php
+  header("Content-type: text/css; charset: UTF-8");
+
+  require_once('../../../../wp-config.php');
+
+  if(get_option( 'fau_primary_color') != ""):
+    $fau_primary    = get_option( 'fau_primary_color');
+  else :
+    $fau_primary    = "#3498db";
+  endif;
+  if(get_option( 'fau_secondary_color') != ""):
+    $fau_secondary  = get_option( 'fau_secondary_color');
+  else :
+    $fau_secondary    = "#2581bf";
+  endif;
+
+?>
 html {
 background:#FFF
 }
 
-a {
-color:#3498db
+a,
+input[type=checkbox]:checked:before,
+.view-switch a.current:before {
+color:<?php echo $fau_primary; ?>
+}
+
+a:hover {
+color:<?php echo $fau_secondary; ?>
 }
 
 #adminmenu {
 margin:0
+}
+
+/* Fixes issue caused by WP V4.2.2 */
+#adminmenu div.wp-menu-image:before {
+  color: #a0a5aa;
+  color: rgb(160,165,170);
+}
+
+#adminmenu li a:focus div.wp-menu-image:before,#adminmenu li.opensub div.wp-menu-image:before,#adminmenu li:hover div.wp-menu-image:before {
+  color: <?php echo $fau_primary; ?>!important;
 }
 
 #adminmenu,#adminmenu .wp-submenu,#adminmenuback,#adminmenuwrap,/* Sub Menu */
@@ -17,17 +50,17 @@ background:#f5f5f5
 
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,#adminmenu .wp-menu-arrow,#adminmenu .wp-menu-arrow div,#adminmenu li.current a.menu-top,#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,.folded #adminmenu li.current.menu-top,.folded #adminmenu li.wp-has-current-submenu,/* Hover actions */
 #adminmenu li.menu-top:hover,#adminmenu li.opensub>a.menu-top,#adminmenu li>a.menu-top:focus {
-background:#3498db;
+background:<?php echo $fau_primary; ?>;
 background:#FFF
 }
 
-#adminmenu .opensub .wp-submenu li.current a,#adminmenu .wp-submenu li.current,#adminmenu .wp-submenu li.current a,#adminmenu .wp-submenu li.current a:focus,#adminmenu .wp-submenu li.current a:hover,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a,#adminmenu .wp-submenu .wp-submenu-head,/* Dashicons */
-#adminmenu .current div.wp-menu-image:before,#adminmenu .wp-has-current-submenu div.wp-menu-image:before,#adminmenu a.current:hover div.wp-menu-image:before,#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
-color:#3498db
+#adminmenu .opensub .wp-submenu li.current a,#adminmenu .wp-submenu li.current,#adminmenu .wp-submenu li.current a,#adminmenu .wp-submenu li.current a:focus,#adminmenu .wp-submenu li.current a:hover,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a,#adminmenu .wp-submenu .wp-submenu-head/*, Dashicons 
+#adminmenu .current div.wp-menu-image:before,#adminmenu .wp-has-current-submenu div.wp-menu-image:before,#adminmenu a.current:hover div.wp-menu-image:before,#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before */{
+color:<?php echo $fau_primary; ?>
 }
 
 #adminmenu li.wp-menu-separator {
-display:none
+display: none
 }
 
 #adminmenu .wp-submenu-head,#adminmenu a.menu-top {
@@ -44,7 +77,7 @@ padding:10px
 
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu div.wp-menu-name {
 color:#FFF;
-color:#3498db
+color:<?php echo $fau_primary; ?>
 }
 
 ul#adminmenu a.wp-has-current-submenu:after,ul#adminmenu>li.current>a.current:after,#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
@@ -66,13 +99,13 @@ padding:30px 25px 24px 0
 }
 
 .wrap .add-new-h2,.wrap .add-new-h2:active {
-background:#3498db;
+background:<?php echo $fau_primary; ?>;
 color:#FFF;
 top:-8px
 }
 
 .wrap .add-new-h2:hover {
-background:#2570a2
+background:<?php echo $fau_secondary; ?>
 }
 
 #titlediv #title-prompt-text {
@@ -82,7 +115,7 @@ font-weight:100
 
 div.updated {
 border:1px solid #e1e1e1;
-border-left:5px solid #3498db;
+border-left:5px solid <?php echo $fau_primary; ?>;
 -webkit-box-shadow:none;
 box-shadow:none
 }
@@ -95,7 +128,7 @@ box-shadow:none
 border:1px solid #e1e1e1
 }
 
-.menu.ui-sortable .menu-item-handle,.meta-box-sortables.ui-sortable .hndle {
+.menu.ui-sortable .menu-item-handle{
 background:#f5f5f5
 }
 
@@ -147,7 +180,7 @@ background:#e4e4e4
 }
 
 .wp-core-ui .button:hover,.wp-core-ui .button-secondary:hover,.wp-core-ui .button-primary {
-background:#3498db;
+background:<?php echo $fau_primary; ?>;
 color:#FFF
 }
 
@@ -180,9 +213,9 @@ top:40px!important
 }
 
 .composer-switch a,.composer-switch a:visited,.composer-switch a.wpb_switch-to-front-composer,.composer-switch a:visited.wpb_switch-to-front-composer,.composer-switch .logo-icon {
-background-color:#3498db!important
+background-color:<?php echo $fau_primary; ?>!important
 }
 
 .composer-switch .vc-spacer, .composer-switch a.wpb_switch-to-composer:hover, .composer-switch a:visited.wpb_switch-to-composer:hover, .composer-switch a.wpb_switch-to-front-composer:hover, .composer-switch a:visited.wpb_switch-to-front-composer:hover {
-background-color: #2581bf!important
+background-color: <?php echo $fau_secondary; ?>!important
 }

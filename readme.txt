@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: boborchard
-Donate link: http://boborchard.com/wordpress-plugin-donations/
+Donate link: http://cash.me/$boborchard
 Tags: ui, ux, admin theme, blue, custom admin
 Requires at least: 3.9.0
-Tested up to: 3.9.1
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ Be sure to check your login page because the default WP logo is a light blue and
 1. Screenshot of the basic admin panel
 
 == Changelog ==
+
+= 1.1 =
+Fixed styling issue that appeared with WordPress v. 4.2.2, fixed incorrect file reference for colorpicker, and cleaned up metabox styling
 
 = 1.0 =
 Added ability to change the primary and secondary color via the WP Admin Settings page
